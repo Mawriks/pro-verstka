@@ -1,5 +1,4 @@
 $color-pink: #F16D7F;
-$color-light-pink: #F1E4E6;
 $color-graphit: #222222;
 $color-grey: #E8E8E8;
 $color-white: #ffffff;
@@ -80,7 +79,8 @@ body {
 }
 
 .banner {
-    background-color: $color-light-pink;
+    background: #F1E4E6;
+    background-color: lighten($color-pink, 26.9);
     height: 764px;
 
     .banner__wrap {
@@ -93,7 +93,7 @@ body {
     .banner__title {
         display: flex;
         align-items: center;
-        max-width: 378px;
+        max-width: 405px;
 
         h1 {
             font-size: 48px;
@@ -126,14 +126,19 @@ body {
         justify-content: space-between;
 
         .category {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
             width: 360px;
             height: 260px;
             position: relative;
             box-shadow: 0 0 0 130px rgba(#211616, 0.7) inset;
+
+            >a {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                text-decoration: none;
+            }
 
             h3 {
                 text-transform: uppercase;
@@ -176,4 +181,174 @@ body {
 
 .category-accesories {
     background-image: url(../images/cat-4.jpg);
+}
+
+.feachured {
+    margin-top: 95px;
+
+    .feachured__header {
+        text-align: center;
+        margin-bottom: 48px;
+
+        h2 {
+            font-size: 30px;
+            font-weight: 400;
+            margin-bottom: 5px;
+        }
+
+        p {
+            color: darken($color-grey, 27);
+        }
+    }
+
+    .feachured__wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 18px;
+    }
+
+    .feachured__footer {
+        text-align: center;
+    }
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    max-width: 360px;
+    background-color: lighten($color-grey, 6.2);
+    margin-bottom: 30px;
+
+    a {
+        line-height: 0;
+        margin-bottom: 5px;
+    }
+
+    .product-card__footer {
+        padding: 20px 15px;
+
+        h3 {
+            font-size: 13px;
+            text-transform: uppercase;
+            color: $color-black;
+            margin-bottom: 13px;
+        }
+
+        p {
+            font-weight: 300;
+            margin-bottom: 18px;
+            color: #5D5D5D;
+            color: darken($color-grey, 55);
+        }
+
+        .price {
+            font-size: 16px;
+            color: $color-pink;
+        }
+    }
+}
+
+.btn {
+    padding: 15px 40px;
+    font-size: 16px;
+    text-decoration: none;
+    border: 1px solid;
+    display: inline-block;
+
+    &.btn-outline {
+        color: $color-pink;
+        border-color: $color-pink;
+
+        &:hover {
+            background-color: $color-pink;
+            color: $color-white;
+        }
+    }
+}
+
+.advantages {
+    background-color: $color-graphit;
+    color: $color-white;
+    padding: 104px 0;
+    margin-top: 95px;
+
+    .advantages__wrap {
+        display: flex;
+    }
+
+    .advantage {
+        padding-top: 61px;
+        text-align: center;
+        color: lighten($color-grey, 7.5);
+        background-position: top center;
+        background-repeat: no-repeat;
+
+        h3 {
+            font-size: 20px;
+            font-weight: 400;
+            margin-bottom: 16px;
+        }
+
+        p {
+            font-weight: 300;
+        }
+    }
+}
+
+.advantage-delivery {
+    background-image: url(../svg/delivery.svg);
+}
+
+.advantage-sales {
+    background-image: url(../svg/sales.svg);
+}
+
+.advantage-quality {
+    background-image: url(../svg/quality.svg);
+}
+
+.socials {
+    display: flex;
+    padding: 0;
+    list-style: none;
+
+    li:not(:last-child) {
+        margin-right: 8px;
+    }
+
+    a {
+        display: block;
+        padding: 8px;
+        background: $color-white;
+        line-height: 0;
+
+        svg {
+            fill: $color-black;
+        }
+
+        &:hover {
+            background-color: $color-pink;
+
+            svg {
+                fill: $color-white;
+            }
+        }
+    }
+}
+
+.footer {
+    padding: 24px 0;
+    background: $color-graphit;
+    color: $color-white;
+
+    p {
+        font-size: 16px;
+    }
+
+    .footer__wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
