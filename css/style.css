@@ -403,4 +403,129 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+
+.subscribe {
+  padding: 95px 0 155px 0;
+  background-image: url(../images/form-bg.jpg);
+  -webkit-box-shadow: 0px 0px 0px 230px rgba(251, 251, 251, 0.7) inset;
+          box-shadow: 0px 0px 0px 230px rgba(251, 251, 251, 0.7) inset;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.subscribe .subscribe__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.subscribe__info {
+  max-width: 360px;
+  text-align: center;
+}
+
+.subscribe__info img {
+  border-radius: 100%;
+  margin-bottom: 30px;
+}
+
+.subscribe__info p {
+  font-size: 20px;
+  color: #222222;
+}
+
+.form-subscribe__header {
+  text-align: center;
+  margin-bottom: 32px;
+  max-width: 360px;
+}
+
+.form-subscribe__header h2 {
+  font-weight: bold;
+  font-size: 24px;
+  text-transform: uppercase;
+  line-height: 1.6;
+}
+
+.form-subscribe__header h2 small {
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form input {
+  font-size: 14px;
+  height: 49px;
+  border-radius: 25px;
+  line-height: 1.2;
+  border: none;
+}
+
+.form input.form-submit {
+  padding: 7px 19px;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #F16D7F;
+}
+
+.form input.form-submit:hover {
+  background-color: #e05f71;
+}
+
+.form input.form-input {
+  padding: 6px 22px;
+  background-color: #e1e1e1;
+}
+
+.form input.form-input::-webkit-input-placeholder {
+  color: #222222;
+  opacity: 0.67;
+}
+
+.form input.form-input:-ms-input-placeholder {
+  color: #222222;
+  opacity: 0.67;
+}
+
+.form input.form-input::-ms-input-placeholder {
+  color: #222222;
+  opacity: 0.67;
+}
+
+.form input.form-input::placeholder {
+  color: #222222;
+  opacity: 0.67;
+}
+
+.form input.form-input:focus {
+  outline: none;
+}
+
+.inline-form .form-input {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.inline-form .form-submit {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
 /*# sourceMappingURL=style.css.map */
