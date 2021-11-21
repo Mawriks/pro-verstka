@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная страница</title>
+    <title>Категория</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
@@ -36,47 +36,37 @@
         </div>
     </header>
     <main>
-        <div class="banner">
-            <div class="container banner__wrap">
-                <div class="banner__title">
-                    <h1>The brand <small>of luxerious <span>fashion</span></small></h1>
-                </div>
+        <div class="page-header">
+            <div class="container page-header__wrap">
+                <h1>New arrivals</h1>
+                <nav>
+                    <ul class="breadcrumbs">
+                        <li><a href="#">Home</a></li><li><a href="#">Men</a></li><li>New arrivals</li> 
+                    </ul>
+                </nav>
             </div>
         </div>
-        <section class="categories">
+        <div class="category">
             <div class="container">
-                <h2 class="hidden">Categories</h2>
-                <div class="categories__wrap">
-                    <div class="category category-women">
-                        <a href="#">
-                            <h3><small>30% off</small> for women</h3>
-                        </a>
+                <div class="category__filter filter">
+                    <div class="filter__button">
+                        <a href="#">Filter <svg width="15" height="10"><use xlink:href="#filter-ico"></use></svg></a>
                     </div>
-                    <div class="category category-men">
-                        <a href="#">
-                            <h3><small>hot deal</small> for men</h3>
-                        </a>
-                    </div>
-                    <div class="category category-kids">
-                        <a href="#">
-                            <h3><small>new arrivals</small> for kids</h3>
-                        </a>
-                    </div>
-                    <div class="category category-accesories">
-                        <a href="#">
-                            <h3><small>luxirous & trendy</small> accesories</h3>
-                        </a>
+                    <div class="filter__sorting">
+                        <form>
+                            <select name="trend">
+                                <option value="0">TRENDING NOW</option>
+                            </select>
+                            <select name="size">
+                                <option>Size</option>
+                            </select>
+                            <select name="price">
+                                <option>Price</option>
+                            </select>
+                        </form>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="feachured">
-            <div class="container">
-                <div class="feachured__header">
-                    <h2>Fetured Items</h2>
-                    <p>Shop for items based on what we featured in this week</p>
-                </div>
-                <div class="feachured__wrap">
+                <div class="category__wrap">
                     <div class="product-card">
                         <a title="card-1" href="#">
                             <img src="images/card-1.jpg" alt="card-1">
@@ -88,8 +78,8 @@
                         </div>
                     </div>
                     <div class="product-card">
-                        <a title="card-2" href="#">
-                            <img src="images/card-2.jpg" alt="card-2">
+                        <a title="card-7" href="#">
+                            <img src="images/card-7.jpg" alt="card-7">
                         </a>
                         <div class="product-card__footer">
                             <h3>Ellery X M'O Capsule</h3>
@@ -118,8 +108,8 @@
                         </div>
                     </div>
                     <div class="product-card">
-                        <a title="card-5" href="#">
-                            <img src="images/card-5.jpg" alt="card-5">
+                        <a title="card-8" href="#">
+                            <img src="images/card-8.jpg" alt="card-8">
                         </a>
                         <div class="product-card__footer">
                             <h3>Ellery X M'O Capsule</h3>
@@ -128,8 +118,38 @@
                         </div>
                     </div>
                     <div class="product-card">
-                        <a title="card-6" href="#">
-                            <img src="images/card-6.jpg" alt="card-6">
+                        <a title="card-9" href="#">
+                            <img src="images/card-9.jpg" alt="card-9">
+                        </a>
+                        <div class="product-card__footer">
+                            <h3>Ellery X M'O Capsule</h3>
+                            <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                            <div class="price">$52.00</div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <a title="card-10" href="#">
+                            <img src="images/card-10.jpg" alt="card-10">
+                        </a>
+                        <div class="product-card__footer">
+                            <h3>Ellery X M'O Capsule</h3>
+                            <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                            <div class="price">$52.00</div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <a title="card-11" href="#">
+                            <img src="images/card-11.jpg" alt="card-11">
+                        </a>
+                        <div class="product-card__footer">
+                            <h3>Ellery X M'O Capsule</h3>
+                            <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                            <div class="price">$52.00</div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <a title="card-12" href="#">
+                            <img src="images/card-12.jpg" alt="card-12">
                         </a>
                         <div class="product-card__footer">
                             <h3>Ellery X M'O Capsule</h3>
@@ -138,11 +158,20 @@
                         </div>
                     </div>
                 </div>
-                <div class="feachured__footer">
-                    <a href="#" class="btn btn-outline">Browse All Product</a>
-                </div>
+                <nav class="category__pagination">
+                    <ul class="pagination">
+                        <li><a href="#"><svg width="8" height="14"><use xlink:href="#arrow-left-ico"></use></svg></a></li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">6.....20</a></li>
+                        <li><a href="#"><svg width="8" height="14"><use xlink:href="#arrow-right-ico"></use></svg></a></li>
+                    </ul>
+                </nav>
             </div>
-        </section>
+        </div>
         <section class="advantages">
             <div class="container">
                 <h2 class="hidden">Advantages</h2>
@@ -213,6 +242,11 @@
             <symbol id="arrow-right-ico" viewBox="0 0 9 14" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0.994995 12L5.995 7L0.994995 2L1.995 0L8.995 7L1.995 14L0.994995 12Z"/>
             </symbol>
+                
+            <symbol id="filter-ico" viewBox="0 0 15 10" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z"/>
+            </symbol>
+                
 
             <symbol id="menu-ico" viewBox="0 0 32 23" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 23V20.31H32V23H0ZM0 12.76V10.07H32V12.76H0ZM0 2.69V0H32V2.69H0Z"/>
