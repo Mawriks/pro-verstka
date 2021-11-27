@@ -734,6 +734,7 @@ body {
   width: 360px;
   margin-right: 30px;
   position: relative;
+  z-index: 1;
 }
 
 .filter__button summary {
