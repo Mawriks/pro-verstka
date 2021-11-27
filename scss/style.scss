@@ -220,16 +220,16 @@ body {
     background-color: lighten($color-grey, 6.2);
     margin-bottom: 30px;
 
+    &:hover {
+        .overlay {
+            opacity: 1;
+        }
+    }
+
     &__image {
         position: relative;
         margin-bottom: 5px;
         line-height: 0;
-
-        &:hover {
-            .overlay {
-                opacity: 1;
-            }
-        }
 
         .overlay {
             position: absolute;

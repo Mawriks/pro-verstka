@@ -261,14 +261,14 @@ body {
   margin-bottom: 30px;
 }
 
+.card:hover .overlay {
+  opacity: 1;
+}
+
 .card__image {
   position: relative;
   margin-bottom: 5px;
   line-height: 0;
-}
-
-.card__image:hover .overlay {
-  opacity: 1;
 }
 
 .card__image .overlay {
