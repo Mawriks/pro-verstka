@@ -1412,7 +1412,7 @@ body {
   border-bottom: 1px solid #E8E8E8;
 }
 
-.product__description h1 {
+.product__description h2 {
   font-size: 18px;
   text-transform: uppercase;
   font-weight: 300;
@@ -1420,14 +1420,14 @@ body {
   color: #4c4c4c;
 }
 
-.product__description h1 small {
+.product__description h2 small {
   display: block;
   margin-bottom: 27px;
   position: relative;
   color: #F16D7F;
 }
 
-.product__description h1 small::before {
+.product__description h2 small::before {
   content: '';
   width: 63px;
   height: 3px;
