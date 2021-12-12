@@ -2244,7 +2244,7 @@ input[type="number"] {
   -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
           box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
   padding: 37px 29px 37px 33px;
-  overflow-y: overlay;
+  overflow-y: auto;
   height: 100%;
   position: relative;
 }

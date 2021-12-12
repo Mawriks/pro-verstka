@@ -1842,7 +1842,7 @@ input[type="number"] {
         background-color: $color-white;
         box-shadow: 6px 4px 35px rgba($color-black, 0.21);
         padding: 37px 29px 37px 33px;
-        overflow-y: overlay;
+        overflow-y: auto;
         height: 100%;
         position: relative;
     }
